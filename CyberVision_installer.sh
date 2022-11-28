@@ -16,7 +16,7 @@ cd mysql
 sudo docker build -t dockerfile .
 
 #executar o container com suas variaveis de ambiente
-sudo docker run -d -p 3306:3306 --name CyberVisionBD -e MYSQL_ROOT_PASSWORD=urubu100 -e MYSQL_DATABASE=cybervision dockerfile
+sudo docker run -d -p 3306:3306 --name CyberVisionBD -e "MYSQL_ROOT_PASSWORD=urubu100" -e "MYSQL_DATABASE=cybervision" dockerfile
 sleep 2
 
 cd ..
