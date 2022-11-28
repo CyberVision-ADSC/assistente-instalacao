@@ -13,10 +13,10 @@ sudo systemctl enable docker
 
 cd mysql
 #Cria a imagem do docker
-sudo docker build -t dockerfile_mysql .
+sudo docker build -t dockerfile .
 
 #executar o container com suas variaveis de ambiente
-sudo docker run -d -p 3306:3306 --name CyberVisionBD -e MYSQL_ROOT_PASSWORD=urubu100 -e MYSQL_DATABASE=cybervision dockerfile_mysql
+sudo docker run -d -p 3306:3306 --name CyberVisionBD -e MYSQL_ROOT_PASSWORD=urubu100 -e MYSQL_DATABASE=cybervision dockerfile
 sleep 2
 
 cd ..
@@ -55,10 +55,10 @@ if [ $? -eq 0 ]
 		echo "$(tput setaf 10)[Cybervision assistant]:$(tput setaf 7) Vamos criar um ambiente Java."		
 
 		#Cria a imagem do docker
-		sudo docker build -t dockerfile_java .
+		sudo docker build -t dockerfile .
 		sleep 30
 
-		sudo docker run -it --name CyberVisionJava -p 8080:8080 dockerfile_java
+		sudo docker run -it --name CyberVisionJava -p 8080:8080 dockerfile
 
 		echo "$(tput setaf 10)[Cybervision assistant]:$(tput setaf 7) Java instalado com sucesso!"
 		sleep 5
