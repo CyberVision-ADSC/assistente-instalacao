@@ -56,7 +56,7 @@ if [ $? -eq 0 ]
 
 		#Cria a imagem do docker
 		sudo docker build -t dockerfile .
-		sleep 30
+		sleep 2
 
 		sudo docker run -it --name CyberVisionJava -p 8080:8080 dockerfile
 
@@ -65,14 +65,12 @@ if [ $? -eq 0 ]
 		
 		cd .. 
 	fi
-clear
 
 echo "$(tput setaf 10)[Cybervision assistant]:$(tput setaf 7) : Obrigado por escolher a Cybervision!"
 sleep 2
 echo "$(tput setaf 10)[Cybervision assistant]:$(tput setaf 7) : Agora você já pode utilizar a aplicação!"
 sleep 5
 
-clear
 # ===================================================================
 # Todos direitos reservados para o autor: Dra. Profa. Marise Miranda.
 # Sob licença Creative Commons @2020
