@@ -35,7 +35,7 @@ if [ $? -eq 0 ]
 		echo "Digite 'c' para fazer o download do CyberVision CLI"
 		read inp
 		
-		if [ \"$inp\" == \"G\" ||  \"$inp\" == \"g\" ]
+		if [ \"$inp\" == \"G\" ]
 			then
 				git clone https://github.com/CyberVision-ADSC/download-cybervision-jar.git
 		else
@@ -99,7 +99,7 @@ if [ $? -eq 0 ]
 						echo "Digite 'c' para fazer o download do CyberVision CLI"
 						read inpt
 
-						if [ \"$inpt\" == \"G\" ||  \"$inpt\" == \"g\" ]
+						if [ \"$inpt\" == \"G\" ]
 							then
 								git clone https://github.com/CyberVision-ADSC/download-cybervision-jar.git
 								chmod 777 cybervision-1.0-SNAPSHOT-jar-with-dependencies.jar
