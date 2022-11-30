@@ -13,7 +13,7 @@ sudo systemctl start docker
 sleep 10
 sudo systemctl enable docker
 
-cd mysql
+cd bd
 #Cria a imagem do docker
 sudo docker build -t dockerfile .
 
