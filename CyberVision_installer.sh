@@ -102,8 +102,10 @@ if [ $? -eq 0 ]
 						if [ \"$inpt\" == \"G\" ||  \"$inpt\" == \"g\" ]
 							then
 								git clone https://github.com/CyberVision-ADSC/download-cybervision-jar.git
+								chmod 777 cybervision-1.0-SNAPSHOT-jar-with-dependencies.jar
 						else
 								git clone https://github.com/CyberVision-ADSC/download-cybervision-jar-cli.git
+								chmod 777 cybervision_app.jar
 						fi
 
 						echo "$(tput setaf 10)[Cybervision assistant]:$(tput setaf 7) : Obrigado por escolher a Cybervision!"
