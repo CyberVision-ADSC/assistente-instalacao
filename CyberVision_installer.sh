@@ -9,7 +9,7 @@ sleep 2
 echo  "$(tput setaf 10)[Cybervision assistant]:$(tput setaf 7)  Para começarmos, vou verificar se você possui o Java instalado...;"
 sleep 2
 
-java --version
+java -version
 if [ $? -eq 0 ]
 	then
 		echo "$(tput setaf 10)[Cybervision assistant]:$(tput setaf 7)Olá você já tem o java instalado!!"
@@ -49,7 +49,7 @@ if [ $? -eq 0 ]
 		echo "$(tput setaf 10)[Cybervision assistant]:$(tput setaf 7)  Confirme para mim se realmente deseja instalar o Java (Y/n)?"		
 		read inst
 		
-		if [ \"$inst\" == \"Y\" ||  \"$inst\" == \"y\" ]
+		if [ \"$inst\" == \"Y\" ]
 			then
 				echo "$(tput setaf 10)[Cybervision assistant]:$(tput setaf 7)  Ok. Você escolheu instalar o Java!"
 				sleep 2
