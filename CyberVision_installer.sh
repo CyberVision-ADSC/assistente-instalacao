@@ -28,6 +28,9 @@ if [ $? -eq 0 ]
 		sleep 2
 		echo "$(tput setaf 10)[Cybervision assistant]:$(tput setaf 7) Por favor escolha a versão que deseja instalar:"
 		sleep 2
+		cd ..
+		cd ..
+		cd Desktop
 		echo "Digite 'g' para fazer o download do CyberVision GUI"
 		echo "Digite 'c' para fazer o download do CyberVision CLI"
 		read inp
@@ -89,8 +92,14 @@ if [ $? -eq 0 ]
 						sleep 2
 						echo "$(tput setaf 10)[Cybervision assistant]:$(tput setaf 7) Por favor escolha a versão que deseja instalar:"
 						sleep 2
+						cd ..
+						cd ..
+						cd Desktop
+						echo "Digite 'g' para fazer o download do CyberVision GUI"
+						echo "Digite 'c' para fazer o download do CyberVision CLI"
+						read inpt
 
-						if [ \"$inp\" == \"G\" ||  \"$inp\" == \"g\" ]
+						if [ \"$inpt\" == \"G\" ||  \"$inpt\" == \"g\" ]
 							then
 								git clone https://github.com/CyberVision-ADSC/download-cybervision-jar.git
 						else
