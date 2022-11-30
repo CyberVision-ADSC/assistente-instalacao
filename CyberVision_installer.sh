@@ -31,11 +31,11 @@ if [ $? -eq 0 ]
 		echo "Digite 'g' para fazer o download do CyberVision GUI"
 		echo"Digite 'c' para fazer o download do CyberVision CLI"
 		read inp
-		if [ \"$inp\" == \"G\" ||  \"$inst\" == \"g\"]
-			git clone https://github.com/CyberVision-ADSC/download-cybervision-jar.git
-		else
-			git clone https://github.com/CyberVision-ADSC/download-cybervision-jar-cli.git
-		fi
+		#if [ \"$inp\" == \"G\" ||  \"$inst\" == \"g\"]
+		#	git clone https://github.com/CyberVision-ADSC/download-cybervision-jar.git
+		#else
+		#	git clone https://github.com/CyberVision-ADSC/download-cybervision-jar-cli.git
+		#fi
 
 		echo "$(tput setaf 10)[Cybervision assistant]:$(tput setaf 7) : Obrigado por escolher a Cybervision!"
 		sleep 2
