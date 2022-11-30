@@ -8,7 +8,9 @@ echo  "$(tput setaf 10)[Cybervision assistant]:$(tput setaf 7) Olá, serei seu a
 echo "$(tput setaf 10)[Cybervision assistant]:$(tput setaf 7) Para começarmos, vou criar um ambiente MySQL para você."
 
 sudo apt install docker.io -y
+sleep 10
 sudo systemctl start docker
+sleep 10
 sudo systemctl enable docker
 
 cd mysql
@@ -44,7 +46,7 @@ if [ $? -eq 0 ]
 		echo "$(tput setaf 10)[Cybervision assistant]:$(tput setaf 7) Por favor escolha a versão que deseja instalar:"
 		sleep 2
 
-		git clone https://github.com/CyberVision-ADSC/CyberVision-Java.git
+		git clone https://github.com/CyberVision-ADSC/download-cybervision-jar-cli.git
 		
 	else 
 		echo "$(tput setaf 10)[Cybervision assistant]:$(tput setaf 7) Opa! Não identifiquei nenhuma versão do Java instalado, mas sem problemas, irei resolver isso agora!"
