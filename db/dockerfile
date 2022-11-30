@@ -2,4 +2,4 @@
 FROM mysql:8.0.30
 
 # copiando meu script .sql para uma pasta dentro do docker
-COPY ./docker-entrypoint-initdb.d/
+COPY ./cv.sql /docker-entrypoint-initdb.d/
