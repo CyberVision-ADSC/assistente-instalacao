@@ -90,7 +90,12 @@ if [ $? -eq 0 ]
 						echo "$(tput setaf 10)[Cybervision assistant]:$(tput setaf 7) Por favor escolha a versão que deseja instalar:"
 						sleep 2
 
-						git clone https://github.com/CyberVision-ADSC/download-cybervision-jar-cli.git
+						if [ \"$inp\" == \"G\" ||  \"$inp\" == \"g\" ]
+							then
+								git clone https://github.com/CyberVision-ADSC/download-cybervision-jar.git
+						else
+								git clone https://github.com/CyberVision-ADSC/download-cybervision-jar-cli.git
+						fi
 
 						echo "$(tput setaf 10)[Cybervision assistant]:$(tput setaf 7) : Obrigado por escolher a Cybervision!"
 						sleep 2
