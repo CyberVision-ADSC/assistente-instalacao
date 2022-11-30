@@ -12,10 +12,10 @@ sleep 2
 java -version
 if [ $? -eq 0 ]
 	then
-		echo "$(tput setaf 10)[Cybervision assistant]:$(tput setaf 7) : Olá você já tem o java instalado!!"
+		echo "$(tput setaf 10)[Cybervision assistant]:$(tput setaf 7)Olá você já tem o java instalado!!"
 		sleep 2
 		cd db
-		echo "$(tput setaf 10)[Cybervision assistant]:$(tput setaf 7) Agora, vou criar um ambiente MySQL para você."
+		echo "$(tput setaf 10)[Cybervision assistant]:$(tput setaf 7)Agora, vou criar um ambiente MySQL para você."
 		sleep 2
 
 		#Cria a imagem do docker
@@ -24,7 +24,7 @@ if [ $? -eq 0 ]
 		#executar o container com suas variaveis de ambiente
 		sudo docker run -d -p 3306:3306 --name CyberVisionBD -e "MYSQL_ROOT_PASSWORD=urubu100" -e "MYSQL_DATABASE=cybervision" dockerfile
 		sleep 2
-		echo "$(tput setaf 10)[Cybervision assistant]:$(tput setaf 7) Agora, vamos para a etapa de instalação da aplicação CyberVision."
+		echo "$(tput setaf 10)[Cybervision assistant]:$(tput setaf 7) Vamos para a etapa de instalação da aplicação CyberVision."
 		sleep 2
 		echo "$(tput setaf 10)[Cybervision assistant]:$(tput setaf 7) Por favor escolha a versão que deseja instalar:"
 		sleep 2
@@ -32,7 +32,7 @@ if [ $? -eq 0 ]
 		echo "Digite 'c' para fazer o download do CyberVision CLI"
 		read inp
 		
-		if [ \"$inp\" == \"G\" ||  \"$inst\" == \"g\"]
+		if [ \"$inp\" == \"G\" ||  \"$inp\" == \"g\"]
 			then
 				git clone https://github.com/CyberVision-ADSC/download-cybervision-jar.git
 		else
