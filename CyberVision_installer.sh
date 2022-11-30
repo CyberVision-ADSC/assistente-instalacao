@@ -33,9 +33,10 @@ if [ $? -eq 0 ]
 		read inp
 		
 		if [ \"$inp\" == \"G\" ||  \"$inst\" == \"g\"]
-			git clone https://github.com/CyberVision-ADSC/download-cybervision-jar.git
-		#else
-		#	git clone https://github.com/CyberVision-ADSC/download-cybervision-jar-cli.git
+			then
+				git clone https://github.com/CyberVision-ADSC/download-cybervision-jar.git
+		else
+				git clone https://github.com/CyberVision-ADSC/download-cybervision-jar-cli.git
 		fi
 
 		echo "$(tput setaf 10)[Cybervision assistant]:$(tput setaf 7) : Obrigado por escolher a Cybervision!"
